@@ -1,0 +1,66 @@
+<!doctype ht
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#063e34">
+  <meta name="description" content="رقيب — حكاية من قلب الميدان. تجربة تعريفية تفاعلية من ثلاث محطات.">
+  <title>رقيب | حكاية من قلب الميدان</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#journey" data-i18n="skip">انتقل إلى التجربة</a>
+<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+ <symbol id="arrow" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+ <symbol id="calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 11h16m-12 5h3"/></symbol>
+ <symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+ <symbol id="note" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M9 8h6m-6 4h6m-6 4h3"/></symbol>
+ <symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+ <symbol id="instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+ <symbol id="repeat" viewBox="0 0 24 24"><path d="M4 9a8 8 0 1 1 0 6m0-12v6h6"/></symbol>
+</svg>
+<header class="header wrap">
+ <!-- The SVG viewport shows only the shield in the unchanged original brand asset. -->
+ <a class="brand" href="#home" aria-label="رقيب — Raqeeb"><svg class="brand-mark" viewBox="65 235 530 625" role="img" aria-label="رمز رقيب"><image href="assets/raqeeb-original.png" width="1448" height="1086"/></svg></a>
+ <span class="header-note" data-i18n="headerNote">حكاية من قلب الميدان</span>
+ <button id="language" class="language" type="button" lang="en">English <span aria-hidden="true">↗</span></button>
+</header>
+<main>
+ <section id="home" class="hero wrap">
+  <div class="hero-copy">
+   <div class="eyebrow"><span class="dot"></span><span data-i18n="eyebrow">رقيب · المساعد الرقابي الميداني</span></div>
+   <h1><span data-i18n="headline1">رحلة تفتيش واحدة.</span><br><em data-i18n="headline2">ميدان أوضح،</em><br><span data-i18n="headline3">قرارات أفضل.</span></h1>
+   <p class="lead" data-i18n="intro">تعرّف على رقيب؛ تصوّر لمساعد رقابي ميداني يربط التخطيط والتوثيق والمتابعة في رحلة واحدة.</p>
+   <a class="button primary" href="#journey"><span data-i18n="start">ابدأ الجولة التعريفية</span><svg><use href="#arrow"/></svg></a>
+   <div class="hero-bottom"><span class="tiny-number" dir="ltr">01 — 03</span><span class="rule"></span><span data-i18n="duration">ثلاث محطات · دقيقة واحدة</span></div>
+  </div>
+  <figure class="hero-image">
+   <div class="photo-frame"><img src="assets/hero-oman.png" width="1122" height="1402" alt="مشهد تصوّري لمفتش عُماني يحمل جهازًا لوحيًا أمام قلعة ونخيل وجبال" fetchpriority="high" id="inspector"><div class="photo-label"><span data-i18n="photoLabel">مشهد تصوّري من عُمان</span><svg><use href="#pin"/></svg></div></div>
+   <figcaption><span data-i18n="fieldFirst">الميدان أولًا.</span><span lang="en">OMAN / RAQEEB</span></figcaption>
+  </figure>
+ </section>
+ <section class="interlude"><div class="wrap interlude-inner"><span class="eyebrow" data-i18n="ideaLabel">الفكرة وراء الرحلة</span><h2 data-i18n="idea">التحدي في ترابط الرحلة كلها.</h2><p data-i18n="ideaText">من التخطيط إلى التوثيق والمتابعة.</p></div></section>
+ <section id="journey" class="journey wrap">
+  <div class="section-heading"><div><span class="eyebrow" data-i18n="experience">01 / التجربة</span><h2 data-i18n="journeyTitle">كن في قلب الحكاية.</h2></div><p data-i18n="journeyIntro">اختر محطة، واكتشف الفكرة وراءها.</p></div>
+  <div role="tablist" id="tabs" aria-label="رحلة التفتيش">
+   <button role="tab" id="tab-0" aria-controls="story" aria-selected="true" tabindex="0" data-step="0"><span class="step-no">01</span><svg><use href="#calendar"/></svg><span data-i18n="step1">قبل الزيارة</span><span class="step-dot"></span></button>
+   <button role="tab" id="tab-1" aria-controls="story" aria-selected="false" tabindex="-1" data-step="1"><span class="step-no">02</span><svg><use href="#pin"/></svg><span data-i18n="step2">أثناء الزيارة</span><span class="step-dot"></span></button>
+   <button role="tab" id="tab-2" aria-controls="story" aria-selected="false" tabindex="-1" data-step="2"><span class="step-no">03</span><svg><use href="#note"/></svg><span data-i18n="step3">بعد الزيارة</span><span class="step-dot"></span></button>
+  </div>
+  <div id="story" role="tabpanel" tabindex="0" aria-labelledby="tab-0" class="story">
+   <div class="story-copy"><span class="eyebrow" id="story-kicker">01 / 03 — التخطيط</span><h3 id="story-title">كل رحلة تبدأ بسؤال.</h3><p id="story-body">كيف تتضح الأولويات قبل أن يبدأ العمل الميداني؟</p>
+    <button id="reveal" class="text-button" aria-expanded="false" aria-controls="insight"><svg><use href="#eye"/></svg><span data-i18n="discover">اكتشف الفكرة</span><span id="reveal-sign" aria-hidden="true">+</span></button>
+    <div id="insight" hidden><p id="story-detail"></p></div>
+    <div class="story-bottom"><button id="next" class="button primary"><span>المحطة التالية</span><svg><use href="#arrow"/></svg></button><span id="progress" role="status">0 / 3 محطات استُكشفت</span></div>
+   </div>
+   <div class="story-art" aria-hidden="true"><span id="art-number">01</span><div class="orbit"><svg><use id="art-icon" href="#calendar"/></svg></div><span id="art-caption">الاستعداد يصنع البداية</span></div>
+  </div>
+  <div class="journey-caption"><span data-i18n="prototype">تصوّر أولي قابل للنقاش والتطوير</span><span class="mini-track"><i></i><i></i><i></i></span></div>
+ </section>
+ <section id="closing" class="closing"><div class="wrap"><span class="eyebrow" data-i18n="closingLabel">نهاية الحكاية، وبداية رؤية</span><h2><span data-i18n="closing1">رحلة واحدة.</span><br><em data-i18n="closing2">صورة أوضح.</em></h2><p data-i18n="closingText">رقيب — تصوّر أولي لمساعد رقابي ميداني يهدف إلى جعل رحلة التفتيش أكثر ترابطًا. النتائج الفعلية تحتاج إلى اختبار ميداني.</p><div class="closing-actions"><a href="https://www.instagram.com/lupteam_/" target="_blank" rel="noopener noreferrer" class="instagram"><svg><use href="#instagram"/></svg><bdi>@lupteam_</bdi><span aria-hidden="true">↗</span></a><button id="restart" class="text-button"><svg><use href="#repeat"/></svg><span data-i18n="restart">عِش الرحلة مرة أخرى</span></button></div></div></section>
+</main>
+<footer class="wrap"><span data-i18n="footer">تجربة تعريفية لهاكاثون · ليست منصة حكومية رسمية</span><span data-i18n="privacy">تجربة بلا نماذج أو جمع بيانات</span></footer>
+<noscript><p class="wrap">فعّل JavaScript لتجربة المحطات الثلاث والتبديل بين اللغات. Enable JavaScript to explore the interactive journey.</p></noscript>
+</body>
+</html>
